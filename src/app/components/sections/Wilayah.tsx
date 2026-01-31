@@ -55,7 +55,7 @@ const mapImages = {
   Wilayah:
     "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=800&fit=crop",
   "Zona Rawan":
-    "https://images.unsplash.com/photo-1589519160732-57fc498494f8?w=1200&h=800&fit=crop",
+    "/images/PETA POTENSI LONGSOR KKN.png",
   "Kualitas Air":
     "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=800&fit=crop",
   UMKM: "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&h=800&fit=crop",
@@ -150,32 +150,39 @@ export default function WilayahSection() {
         {/* Map Container */}
         <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-xl">
           <div className="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-lg">
-            {/* Map Image */}
-            <div className="relative w-full h-[350px] sm:h-[450px] md:h-[600px]">
-              <img
-                src={mapImages[activeTab]}
-                alt={`Peta ${activeTab}`}
-                className="w-full h-full object-cover"
-              />
+            {/* Map Image - Scrollable on mobile */}
+            <div className="relative w-full overflow-x-auto overflow-y-hidden">
+              <div className="min-w-[800px] md:min-w-full h-full">
+                <img
+                  src={mapImages[activeTab]}
+                  alt={`Peta ${activeTab}`}
+                  className="w-full h-full object-cover"
+                />
 
-              {/* Overlay info */}
-              <div className="absolute top-3 md:top-4 left-3 md:left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 md:px-4 py-1.5 md:py-2 shadow-lg">
-                <p className="text-xs md:text-sm font-semibold text-gray-800">
-                  {activeTab}
-                </p>
-                {activeTab === "Wilayah" && (
-                  <p className="text-[10px] md:text-xs text-gray-600">
-                    {selectedDukuh} - {selectedRW} - {selectedRT}
+                {/* Overlay info */}
+                <div className="absolute top-3 md:top-4 left-3 md:left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 md:px-4 py-1.5 md:py-2 shadow-lg">
+                  <p className="text-xs md:text-sm font-semibold text-gray-800">
+                    {activeTab}
                   </p>
-                )}
-              </div>
+                  {activeTab === "Wilayah" && (
+                    <p className="text-[10px] md:text-xs text-gray-600">
+                      {selectedDukuh} - {selectedRW} - {selectedRT}
+                    </p>
+                  )}
+                </div>
 
-              {/* Watermark */}
-              <div className="absolute bottom-3 md:bottom-4 right-3 md:right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 md:px-3 py-0.5 md:py-1">
-                <p className="text-[10px] md:text-xs text-white">
-                  Dummy Map Image
-                </p>
+                {/* Watermark */}
+                <div className="absolute bottom-3 md:bottom-4 right-3 md:right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 md:px-3 py-0.5 md:py-1">
+                  <p className="text-[10px] md:text-xs text-white">
+                    Dummy Map Image
+                  </p>
+                </div>
               </div>
+            </div>
+            
+            {/* Scroll indicator for mobile */}
+            <div className="md:hidden text-center py-2 bg-gray-50">
+              <p className="text-xs text-gray-500">← Geser untuk melihat selengkapnya →</p>
             </div>
           </div>
         </div>

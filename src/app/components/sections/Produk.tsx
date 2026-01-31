@@ -342,7 +342,7 @@ const ProdukLokalSection = () => {
             onClick={() =>
               window.open(`https://wa.me/${product.phone}`, "_blank")
             }
-            className="w-full bg-[#1F7A4D] bottom-4 z-50 sticky hover:bg-teal-800 text-white py-3 rounded-full font-medium transition flex items-center justify-center gap-2"
+            className="w-full bg-[#1F7A4D] hover:bg-teal-800 text-white py-3 rounded-full font-medium transition flex items-center justify-center gap-2"
           >
             <WhatsAppIcon className="w-5 h-5" />
             Hubungi Penjual
