@@ -28,8 +28,9 @@ export default function AboutSection() {
             Tentang Plono Timur
           </h2>
           <p className="text-base lg:text-xl text-gray-700 max-w-4xl mx-auto leading-relaxed">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-          </p>
+          Plono Timur adalah padukuhan yang terletak di Kelurahan Pagerharjo, Kapanewon Samigaluh, Kabupaten Kulon Progo, Daerah Istimewa Yogyakarta. Berada di kawasan perbukitan dengan tanah yang subur, Plono Timur dikelilingi lahan pertanian dan perkebunan yang menjadi sumber kehidupan masyarakat. 
+          <br /><br />
+          Didukung semangat gotong royong dan kearifan lokal, masyarakat Plono Timur hidup selaras dengan alam serta menjaga keberlanjutan lingkungan sebagai bagian dari identitas padukuhan.         </p>
         </div>
 
         {/* Product Cards */}

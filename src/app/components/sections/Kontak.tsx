@@ -17,8 +17,8 @@ const kontakData = [
   },
   {
     id: 3,
-    name: "Kepala Dukuh",
-    phone: "+62 897-3612-1210",
+    name: "Dukuh",
+    phone: "+62 813-3630-0600",
   },
 ];
 

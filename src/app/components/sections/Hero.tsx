@@ -8,14 +8,14 @@ const slides = [
     image: "/images/gambar_1.jpg",
     title: "Selamat Datang di Plono Timur",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    "Tanah subur, budaya hidup, dan kebersamaan yang menguatkan. Plono Timur tumbuh selaras dengan alam, menjadikan hasil bumi dan gotong royong sebagai jati diri padukuhan.",
   },
   {
     id: 2,
     image: "/images/gambar_2.jpg",
     title: "Selamat Datang di Plono Timur",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+      "Tanah subur, budaya hidup, dan kebersamaan yang menguatkan. Plono Timur tumbuh selaras dengan alam, menjadikan hasil bumi dan gotong royong sebagai jati diri padukuhan.",
   },
 ];
 

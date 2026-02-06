@@ -5,15 +5,15 @@ import { Check } from "lucide-react";
 const missionItems = [
   {
     id: 1,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    text: "Melestarikan lingkungan dan kekayaan hasil bumi sebagai dasar kehidupan dan keberlanjutan padukuhan."
   },
   {
     id: 2,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    text: "Memperkuat semangat gotong royong, kebersamaan, serta partisipasi masyarakat dalam pembangunan."
   },
   {
     id: 3,
-    text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    text: "Mengembangkan potensi lokal dan kearifan budaya untuk mewujudkan masyarakat yang mandiri dan berdaya."
   }
 ];
 
@@ -35,8 +35,7 @@ export default function VisionMissionSection() {
               Visi
             </h3>
             <p className="text-base lg:text-lg text-white leading-relaxed text-center lg:text-left">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            </p>
+            Terwujudnya Padukuhan Plono Timur yang lestari, mandiri, dan berdaya melalui harmoni alam, budaya, dan kebersamaan masyarakat.            </p>
           </div>
 
           {/* Misi Card */}

@@ -5,45 +5,45 @@ import Image from "next/image";
 const struktur = {
   dukuh: {
     title: "Dukuh",
-    name: "Paulus Priyo S."
+    name: "Paulus Priyo Sabtono"
   },
   rw: [
     {
       id: 1,
       title: "Ketua RW 09",
-      name: "Nama orang"
+      name: "Paulus Swarno"
     },
     {
       id: 2,
       title: "Ketua RW 10",
-      name: "Nama orang"
+      name: "Widodo"
     },
     {
       id: 3,
-      title: "Ketua RW 10",
-      name: "Nama orang"
+      title: "Ketua RW 11",
+      name: "Marjuki"
     }
   ],
   rt: [
     {
       id: 1,
       items: [
-        { number: "RT 17", name: "Paulus Priyo S." },
-        { number: "RT 17", name: "Paulus Priyo S." }
+        { number: "RT 17", name: "V. Sumardi" },
+        { number: "RT 18", name: "Suroto" }
       ]
     },
     {
       id: 2,
       items: [
-        { number: "RT 17", name: "Paulus Priyo S." },
-        { number: "RT 17", name: "Paulus Priyo S." }
+        { number: "RT 19", name: "Puger Tri Gunawan" },
+        { number: "RT 20", name: "Suwarji." }
       ]
     },
     {
       id: 3,
       items: [
-        { number: "RT 17", name: "Paulus Priyo S." },
-        { number: "RT 17", name: "Paulus Priyo S." }
+        { number: "RT 21", name: "Mujiharjo" },
+        { number: "RT 22", name: "Sudarmawan" }
       ]
     }
   ],
@@ -52,24 +52,23 @@ const struktur = {
       id: 1,
       title: "Keamanan",
       items: [
-        { name: "Paulus Priyo S." },
-        { name: "Paulus Priyo S." }
+        { name: "Suprapman" },
+        { name: "Supriyanto" }
       ]
     },
     {
       id: 2,
       title: "Kesehatan",
       items: [
-        { name: "Paulus Priyo S." },
-        { name: "Paulus Priyo S." }
+        { name: "Kader Posyandu" },
+        { name: "Kader PKK" }
       ]
     },
     {
       id: 3,
-      title: "Ketua RT",
+      title: "Keagamaan",
       items: [
-        { name: "Paulus Priyo S." },
-        { name: "Paulus Priyo S." }
+        { name: "Rois Fajar Abdullah" },
       ]
     }
   ]

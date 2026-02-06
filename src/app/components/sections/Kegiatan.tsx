@@ -7,12 +7,12 @@ import { motion, AnimatePresence } from "framer-motion";
 const kegiatanData = [
   {
     id: 1,
-    title: "Kerja Bakti Lingkungan RW 11",
+    title: "Kerja Bakti Lingkungan RW 10",
     date: "DD/MM/YYYY",
     shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+      "Kegiatan gotong royong warga RW 10 untuk menjaga kebersihan dan kenyamanan lingkungan RW.",
     fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Kerja Bakti RW 10 merupakan kegiatan rutin yang melibatkan warga dalam membersihkan lingkungan sekitar, seperti jalan, saluran air, dan fasilitas umum. Kegiatan ini bertujuan untuk menciptakan lingkungan yang bersih, sehat, dan nyaman, sekaligus mempererat kebersamaan serta semangat gotong royong antarwarga Plono Timur.",
     image:
       "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=600&fit=crop",
     gallery: [
@@ -160,14 +160,14 @@ const kegiatanData = [
   },
   {
     id: 10,
-    title: "Kegiatan PKK RW 10",
+    title: "Perkumpulan RW 10",
     date: "DD/MM/YYYY",
     shortDesc:
       "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
     fullDesc:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+      "https://drive.google.com/file/d/1goQUEr06VhNhaTH1ZCfHOfDXVxZRs-Fq/view?usp=drive_link",
     gallery: [
       "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
       "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
@@ -195,7 +195,7 @@ const kegiatanData = [
   {
     id: 10,
     title: "Kegiatan Taman Bacaan Masyarakat",
-    date: "DD/MM/YYYY",
+    date: "04/01/2026",
     shortDesc:
       "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
     fullDesc:
