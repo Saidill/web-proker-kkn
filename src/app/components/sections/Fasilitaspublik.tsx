@@ -26,9 +26,8 @@ const fasilitasData: Fasilitas[] = [
     id: 1,
     name: "Balai Desa Pagerharjo",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop",
+      "Pusat pelayanan administrasi dan kegiatan masyarakat Desa Pagerharjo.",
+    image: "/images/fasilitaspublik/kelurahan pagerharjo.png",
     lat: -7.673170182866815,
     lng: 110.13503415233636,
     googleMapsUrl:
@@ -38,9 +37,8 @@ const fasilitasData: Fasilitas[] = [
     id: 2,
     name: "Naoki Plono Pusat Belanja",
     description:
-      "Naoki Plono adalah pusat perbelanjaan modern yang menyediakan berbagai kebutuhan sehari-hari bagi warga Desa Plono Timur dan sekitarnya. Dengan konsep yang ramah lingkungan dan fasilitas lengkap, Naoki Plono menjadi destinasi favorit untuk berbelanja warga Plono Timur.",
-    image:
-      "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop",
+      "Pusat perbelanjaan modern untuk memenuhi kebutuhan sehari-hari warga.",
+    image: "/images/fasilitaspublik/naoki.png",
     lat: -7.669270405074422,
     lng: 110.14384410223076,
     googleMapsUrl:
@@ -50,9 +48,8 @@ const fasilitasData: Fasilitas[] = [
     id: 3,
     name: "Pasar Tradisional Plono Timur",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1564769610726-4b5c6e3e7b70?w=800&h=600&fit=crop",
+      "Pasar tradisional yang menyediakan kebutuhan pokok masyarakat sekitar.",
+    image: "/images/fasilitaspublik/pasar plono.png",
     lat: -7.669157471025906,
     lng: 110.14283798103988,
     googleMapsUrl:
@@ -62,9 +59,8 @@ const fasilitasData: Fasilitas[] = [
     id: 4,
     name: "Masjid Jami' Plono Timur",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&h=600&fit=crop",
+      "Tempat ibadah utama umat Muslim dan pusat kegiatan keagamaan warga.",
+    image: "/images/fasilitaspublik/masjid jami.png",
     lat: -7.6688549476936485,
     lng: 110.14665610000333,
     googleMapsUrl:
@@ -74,9 +70,8 @@ const fasilitasData: Fasilitas[] = [
     id: 5,
     name: "Gereja Kristen Jawa Plono (GKJ PLONO)",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
+      "Tempat ibadah umat Kristen dan pusat kegiatan rohani jemaat.",
+    image: "/images/fasilitaspublik/gereja gkj.png",
     lat: -7.665963576040485,
     lng: 110.14422297424042,
     googleMapsUrl:
@@ -84,29 +79,17 @@ const fasilitasData: Fasilitas[] = [
   },
   {
     id: 6,
-    name: "Masjid Al Hikmah",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop",
-    lat: -7.668036810592859,
-    lng: 110.14343144170745,
-    googleMapsUrl:
-      "https://www.google.com/maps?q=-7.668036810592859, 110.14343144170745",
-  },
-  {
-    id: 7,
     name: "Masjid Baiturrohim",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop",
+      "Masjid untuk kegiatan ibadah dan aktivitas keagamaan masyarakat sekitar.",
+    image: "/images/fasilitaspublik/masjid baiturahman.png",
     lat: -7.670035790420361,
     lng: 110.14425756209009,
     googleMapsUrl:
       "https://www.google.com/maps?q=-7.670035790420361, 110.14425756209009",
   },
 ];
+
 
 /* ================= ANIMATION ================= */
 
