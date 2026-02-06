@@ -7,7 +7,7 @@ import { motion, AnimatePresence } from "framer-motion";
 const kegiatanData = [
   {
     id: 1,
-    title: "Kegiatan 1",
+    title: "Kerja Bakti Lingkungan RW 11",
     date: "DD/MM/YYYY",
     shortDesc:
       "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
@@ -24,7 +24,7 @@ const kegiatanData = [
   },
   {
     id: 2,
-    title: "Kegiatan 2",
+    title: "Senam Bersama Gerakan Masyarakat Sehat",
     date: "DD/MM/YYYY",
     shortDesc:
       "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
@@ -41,7 +41,7 @@ const kegiatanData = [
   },
   {
     id: 3,
-    title: "Kegiatan 3",
+    title: "Diskusi Warga Plono Timur Bersama KKN PPM UGM",
     date: "DD/MM/YYYY",
     shortDesc:
       "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
@@ -58,7 +58,143 @@ const kegiatanData = [
   },
   {
     id: 4,
-    title: "Kegiatan 4",
+    title: "Tanam Jahe Bersama Warga",
+    date: "DD/MM/YYYY",
+    shortDesc:
+      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: 5,
+    title: "HUT Ke-79 Kalurahan Pagerharjo",
+    date: "DD/MM/YYYY",
+    shortDesc:
+      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: 6,
+    title: "HUT Ke-79 Kalurahan Pagerharjo",
+    date: "DD/MM/YYYY",
+    shortDesc:
+      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: 7,
+    title: "Posyandu Balita",
+    date: "DD/MM/YYYY",
+    shortDesc:
+      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+    ],
+  },
+    {
+    id: 8,
+    title: "Dasa Wisma",
+    date: "DD/MM/YYYY",
+    shortDesc:
+      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: 9,
+    title: "Kegiatan PKK RW 9",
+    date: "DD/MM/YYYY",
+    shortDesc:
+      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: 10,
+    title: "Kegiatan PKK RW 10",
+    date: "DD/MM/YYYY",
+    shortDesc:
+      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: 11,
+    title: "Kegiatan PKK RW 11",
+    date: "DD/MM/YYYY",
+    shortDesc:
+      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+    fullDesc:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+    gallery: [
+      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
+      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+    ],
+  },
+  {
+    id: 10,
+    title: "Kegiatan Taman Bacaan Masyarakat",
     date: "DD/MM/YYYY",
     shortDesc:
       "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",

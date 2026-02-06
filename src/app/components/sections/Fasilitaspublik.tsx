@@ -9,69 +9,80 @@ import { motion, AnimatePresence } from "framer-motion";
 const fasilitasData = [
   {
     id: 1,
-    name: "Balai Desa Plono Timur",
+    name: "Balai Desa Pagerharjo",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image:
       "https://images.unsplash.com/photo-1582407947304-fd86f028f716?w=800&h=600&fit=crop",
-    lat: -7.797068,
-    lng: 110.370529,
-    googleMapsUrl: "https://www.google.com/maps?q=-7.797068,110.370529",
+    lat: -7.673170182866815,
+    lng: 110.13503415233636,
+    googleMapsUrl: "https://www.google.com/maps?q=-7.673170182866815, 110.13503415233636",
   },
   {
     id: 2,
-    name: "Posyandu Mawar",
+    name: "Naoki Plono Pusat Belanja",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Naoki Plono adalah pusat perbelanjaan modern yang menyediakan berbagai kebutuhan sehari-hari bagi warga Desa Plono Timur dan sekitarnya. Dengan konsep yang ramah lingkungan dan fasilitas lengkap, Naoki Plono menjadi destinasi favorit untuk berbelanja warga Plono Timur.",
     image:
       "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=800&h=600&fit=crop",
-    lat: -7.798,
-    lng: 110.371,
-    googleMapsUrl: "https://www.google.com/maps?q=-7.798000,110.371000",
+    lat:-7.669270405074422,
+    lng: 110.14384410223076,
+    googleMapsUrl: "https://www.google.com/maps?q=-7.669344835126685, 110.14397284826678",
   },
   {
     id: 3,
-    name: "Masjid Al-Ikhlas",
+    name: "Pasar Tradisional Plono Timur",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image:
       "https://images.unsplash.com/photo-1564769610726-4b5c6e3e7b70?w=800&h=600&fit=crop",
-    lat: -7.7965,
-    lng: 110.37,
-    googleMapsUrl: "https://www.google.com/maps?q=-7.796500,110.370000",
+    lat: -7.669157471025906,
+    lng: 110.14283798103988,
+    googleMapsUrl: "https://www.google.com/maps?q=-7.669157471025906, 110.14283798103988",
   },
   {
     id: 4,
-    name: "Lapangan Olahraga",
+    name: "Masjid Jami' Plono Timur",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image:
       "https://images.unsplash.com/photo-1551958219-acbc608c6377?w=800&h=600&fit=crop",
-    lat: -7.7975,
-    lng: 110.3715,
-    googleMapsUrl: "https://www.google.com/maps?q=-7.797500,110.371500",
+    lat: -7.6688549476936485,
+    lng: 110.14665610000333,
+    googleMapsUrl: "https://www.google.com/maps?q=-7.6688549476936485, 110.14665610000333",
   },
   {
     id: 5,
-    name: "Taman Bermain Anak",
+    name: "Gereja Kristen Jawa Plono (GKJ PLONO)",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image:
       "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop",
-    lat: -7.7968,
-    lng: 110.3708,
-    googleMapsUrl: "https://www.google.com/maps?q=-7.796800,110.370800",
+    lat: -7.665963576040485,
+    lng: 110.14422297424042,
+    googleMapsUrl: "https://www.google.com/maps?q=-7.665963576040485, 110.14422297424042",
   },
   {
     id: 6,
-    name: "Perpustakaan Desa",
+    name: "Masjid Al Hikmah",
     description:
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
     image:
       "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop",
-    lat: -7.7972,
-    lng: 110.3702,
-    googleMapsUrl: "https://www.google.com/maps?q=-7.797200,110.370200",
+    lat: -7.668036810592859,
+    lng: 110.14343144170745,
+    googleMapsUrl: "https://www.google.com/maps?q=-7.668036810592859, 110.14343144170745",
+  },
+  {
+    id: 7,
+    name: "Masjid Baiturrohim",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    image:
+      "https://images.unsplash.com/photo-1521587760476-6c12a4b040da?w=800&h=600&fit=crop",
+    lat: -7.670035790420361,
+    lng:  110.14425756209009,
+    googleMapsUrl: "https://www.google.com/maps?q=-7.670035790420361, 110.14425756209009",
   },
 ];
 
