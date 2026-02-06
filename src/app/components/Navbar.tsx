@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 
 const menus = [
   { label: "Beranda", href: "#Beranda" },
@@ -19,9 +20,15 @@ export default function Navbar() {
     <nav className="sticky top-0 z-50 w-full bg-white shadow-sm">
       <div className="mx-auto px-6 lg:px-12">
         <div className="flex h-16 lg:h-20 items-center justify-between">
-          {/* Logo */}
           <div className="flex items-center gap-2 lg:gap-3">
-            <div className="h-10 w-10 lg:h-12 lg:w-12 rounded-full bg-green-100" />
+            <Image
+              src="/images/logo_plono.png"
+              alt="Logo Plono Timur"
+              width={72}
+              height={72}
+              className="rounded-full"
+            />
+
             <span className="text-xl lg:text-3xl font-semibold text-green-700">
               Plono Timur
             </span>

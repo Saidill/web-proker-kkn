@@ -54,10 +54,8 @@ const tabs = ["Wilayah", "Zona Rawan", "Kualitas Air", "UMKM"];
 const mapImages = {
   Wilayah:
     "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=800&fit=crop",
-  "Zona Rawan":
-    "/images/PETA POTENSI LONGSOR KKN.png",
-  "Kualitas Air":
-    "https://images.unsplash.com/photo-1559827260-dc66d52bef19?w=1200&h=800&fit=crop",
+  "Zona Rawan": "/images/datapenduduk/PETA POTENSI LONGSOR KKN.png",
+  "Kualitas Air": "/images/datapenduduk/kualitas air.png",
   UMKM: "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&h=800&fit=crop",
 };
 
@@ -170,19 +168,14 @@ export default function WilayahSection() {
                     </p>
                   )}
                 </div>
-
-                {/* Watermark */}
-                <div className="absolute bottom-3 md:bottom-4 right-3 md:right-4 bg-black/50 backdrop-blur-sm rounded-lg px-2 md:px-3 py-0.5 md:py-1">
-                  <p className="text-[10px] md:text-xs text-white">
-                    Dummy Map Image
-                  </p>
-                </div>
               </div>
             </div>
-            
+
             {/* Scroll indicator for mobile */}
             <div className="md:hidden text-center py-2 bg-gray-50">
-              <p className="text-xs text-gray-500">← Geser untuk melihat selengkapnya →</p>
+              <p className="text-xs text-gray-500">
+                ← Geser untuk melihat selengkapnya →
+              </p>
             </div>
           </div>
         </div>
