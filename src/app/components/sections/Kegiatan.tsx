@@ -112,6 +112,21 @@ const kegiatanData: Kegiatan[] = [
   },
   {
     id: 7,
+    title: "Sosialisasi Anti Judi di SMA",
+    shortDesc:
+      "Program kerja ini dilatarbelakangi oleh maraknya praktik judi, khususnya judi online, yang semakin mudah diakses oleh remaja melalui gawai dan media sosial. Minimnya literasi mengenai bahaya judi serta kurangnya pemahaman tentang dampak psikologis, sosial, dan ekonomi dari perilaku tersebut menjadikan siswa SMA sebagai kelompok yang rentan terpapar.",
+    fullDesc:
+      "Program kerja ini dilatarbelakangi oleh maraknya praktik judi, khususnya judi online, yang semakin mudah diakses oleh remaja melalui gawai dan media sosial. Minimnya literasi mengenai bahaya judi serta kurangnya pemahaman tentang dampak psikologis, sosial, dan ekonomi dari perilaku tersebut menjadikan siswa SMA sebagai kelompok yang rentan terpapar. Kondisi ini menuntut adanya upaya edukatif dan preventif melalui kegiatan sosialisasi yang terarah dan relevan dengan kehidupan remaja. Melalui program sosialisasi anti judi ini, mahasiswa KKN berupaya memberikan pemahaman kepada siswa SMA mengenai apa itu judi, bentuk-bentuk judi konvensional maupun judi online, serta berbagai dampak negatif yang ditimbulkan.",
+    image: "/images/kegiatan/proker_evan/proker evan 1.jpg",
+    gallery: [
+      "/images/kegiatan/proker_evan/proker evan 2.jpg",
+      "/images/kegiatan/proker_evan/proker evan 3.jpg",
+      "/images/kegiatan/proker_evan/proker evan 4.jpg",
+      "/images/kegiatan/proker_evan/proker evan 4.jpg",
+    ],
+  },
+  {
+    id: 8,
     title: "Praktik pembuatan popcorn jagung",
     shortDesc:
       "Mengenalkan potensi pengolahan popcorn dari jagung kemudian dilanjutkan dengan praktik bersama ibu ibu.",
@@ -122,6 +137,21 @@ const kegiatanData: Kegiatan[] = [
       "/images/kegiatan/popcorn/IMG_20260113_153300.jpeg",
       "/images/kegiatan/popcorn/IMG_20260114_151814.jpeg",
       "/images/kegiatan/popcorn/IMG_20260114_151822.jpeg",
+    ],
+  },
+  {
+    id: 9,
+    title: "Pembuatan Papan Informasi Desa",
+    shortDesc:
+      "Program ini bertujuan untuk menyediakan tempat bagi warga Padukuhan Plono Timur untuk menyebarkan informasi penting.Papan informasi akan diletakkan di pos ronda atau tepat-tempat berkumpul warga lainnya.",
+    fullDesc:
+      "Program ini bertujuan untuk menyediakan tempat bagi warga Padukuhan Plono Timur untuk menyebarkan informasi penting.Papan informasi akan diletakkan di pos ronda atau tepat-tempat berkumpul warga lainnya. Informasi yang pada papan informasi (peta, data kependudukan, dll) akan dapat terus digunakan oleh masyarakat. Selain itu, warga dapat mengubah atau menambahkan isi papan sesuai kebutuhan.",
+    image: "/images/kegiatan/proker_rasif/proker rasif 1.jpg",
+    gallery: [
+      "/images/kegiatan/proker_rasif/proker rasif 2.jpg",
+      "/images/kegiatan/proker_rasif/proker rasif 3.jpg",
+      "/images/kegiatan/proker_rasif/proker rasif 4.jpg",
+      "/images/kegiatan/proker_rasif/proker rasif 5.jpg",
     ],
   },
 ];
