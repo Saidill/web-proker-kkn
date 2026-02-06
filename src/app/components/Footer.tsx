@@ -24,12 +24,14 @@ const Footer: React.FC = () => {
 
               <div>
                 <h2 className="text-3xl font-bold">Plono Timur</h2>
-                <p className="text-base opacity-90">Lalalalalalalalalalalala</p>
+                <p className="text-base opacity-90">
+                  Pagerharjo, Samigaluh, Kulon Progo, DIY
+                </p>
               </div>
             </div>
 
             {/* Navigation */}
-            <nav className="flex items-center gap-8">
+            <nav className="flex items-center gap-6">
               <a
                 href="#Beranda"
                 className="text-base font-medium hover:opacity-80 transition-opacity"
@@ -94,37 +96,37 @@ const Footer: React.FC = () => {
         {/* Brand */}
         <h2 className="text-5xl font-bold mb-4">Plono Timur</h2>
         <p className="text-2xl mb-10 text-[#1a5940]">
-          Lalalalalalalalalalalala
+          Pagerharjo, Samigaluh, Kulon Progo, DIY
         </p>
 
         {/* Navigation */}
         <nav className="flex flex-wrap justify-center gap-x-4 gap-y-5 mb-12">
           <a
-            href="#beranda"
+            href="#Beranda"
             className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
           >
             Beranda
           </a>
           <a
-            href="#profil"
+            href="#Profil"
             className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
           >
             Profil
           </a>
           <a
-            href="#kegiatan"
+            href="#Kegiatan"
             className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
           >
             Kegiatan
           </a>
           <a
-            href="#produk-lokal"
+            href="#ProdukLokal"
             className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
           >
             Produk Lokal
           </a>
           <a
-            href="#wilayah"
+            href="#Wilayah"
             className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
           >
             Wilayah

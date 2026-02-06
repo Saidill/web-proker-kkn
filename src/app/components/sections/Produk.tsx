@@ -397,7 +397,10 @@ export default function ProdukLokalSection() {
   /* ================= RENDER ================= */
 
   return (
-    <section id="ProdukLokal" className="min-h-screen bg-gradient-to-b from-teal-50 to-white py-16">
+    <section
+      id="ProdukLokal"
+      className="min-h-screen bg-gradient-to-b from-teal-50 to-white py-16"
+    >
       <div className="container mx-auto px-4">
         {/* Title */}
         <h2 className="text-3xl md:text-4xl font-bold text-center mb-12 text-gray-800">
@@ -475,40 +478,52 @@ interface ProductCardProps {
 
 function ProductCard({ product, onDetail }: ProductCardProps) {
   return (
-    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden">
+    <div className="bg-white rounded-xl shadow hover:shadow-lg transition overflow-hidden flex flex-col h-full">
+      {/* Image */}
       <img
         src={product.image}
         alt={product.name}
         className="w-full h-36 md:h-48 object-cover"
       />
 
-      <div className="p-4">
-        <h3 className="font-bold text-gray-800">{product.name}</h3>
+      {/* Content */}
+      <div className="p-4 flex flex-col flex-1">
+        {/* Info */}
+        <div className="mb-4">
+          <h3 className="font-bold text-gray-800 line-clamp-2 min-h-[3rem]">
+            {product.name}
+          </h3>
 
-        <p className="text-teal-600 text-sm font-semibold mb-2">
-          {product.category}
-        </p>
+          <p className="text-teal-600 text-sm font-semibold mb-2">
+            {product.category}
+          </p>
 
-        <p className="text-gray-600 text-sm mb-3 line-clamp-2 hidden md:block">
-          {product.description}
-        </p>
+          {/* Desktop desc */}
+          <p className="text-gray-600 text-sm line-clamp-2 hidden md:block">
+            {product.description}
+          </p>
+        </div>
 
-        <div className="flex gap-2">
-          {/* WA */}
+        {/* Button Area */}
+        <div className="mt-auto grid grid-cols-2 gap-2">
+          {/* Hubungi */}
           <button
             onClick={() =>
               window.open(`https://wa.me/${product.phone}`, "_blank")
             }
-            className="flex-1 bg-[#1F7A4D] hover:bg-teal-800 text-white rounded-full py-2 text-sm font-medium flex items-center justify-center gap-2"
+            className="flex items-center justify-center gap-1.5 bg-[#1F7A4D] hover:bg-teal-800 text-white rounded-lg py-2 text-sm font-bold transition active:scale-95"
           >
-            <WhatsAppIcon className="w-4 h-4" />
-            Hubungi
+            <span className="hidden md:flex">
+              <WhatsAppIcon className="w-4 h-4" />
+            </span>
+
+            <span>Hubungi</span>
           </button>
 
           {/* Detail */}
           <button
             onClick={onDetail}
-            className="flex-1 border-2 border-teal-700 text-teal-700 rounded-full py-2 text-sm font-medium hover:bg-teal-50"
+            className="flex items-center justify-center border border-teal-600 text-teal-700 rounded-lg py-2 text-sm font-bold hover:bg-teal-50 transition active:scale-95"
           >
             Detail
           </button>

@@ -69,8 +69,7 @@ const fasilitasData: Fasilitas[] = [
   {
     id: 5,
     name: "Gereja Kristen Jawa Plono (GKJ PLONO)",
-    description:
-      "Tempat ibadah umat Kristen dan pusat kegiatan rohani jemaat.",
+    description: "Tempat ibadah umat Kristen dan pusat kegiatan rohani jemaat.",
     image: "/images/fasilitaspublik/gereja gkj.png",
     lat: -7.665963576040485,
     lng: 110.14422297424042,
@@ -89,7 +88,6 @@ const fasilitasData: Fasilitas[] = [
       "https://www.google.com/maps?q=-7.670035790420361, 110.14425756209009",
   },
 ];
-
 
 /* ================= ANIMATION ================= */
 
@@ -212,7 +210,7 @@ export default function FasilitasPublikSection() {
           </div>
 
           {/* Mobile */}
-          <div className="md:hidden flex-1 overflow-hidden px-2">
+          <div className="md:hidden flex-1 overflow-visible px-2 pb-6">
             <AnimatePresence initial={false} custom={direction} mode="wait">
               <motion.div
                 key={index}

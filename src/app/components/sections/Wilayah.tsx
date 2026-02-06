@@ -10,6 +10,7 @@ type RW = "RW 09" | "RW 10" | "RW 11";
 type KependudukanOption =
   | "Profil Kependudukan"
   | "Komposisi Masyarakat"
+  | "Profil Lokasi Dukuh"
   | "Peta Administrasi Dukuh"
   | "Peta Administrasi";
 
@@ -22,15 +23,14 @@ const rwOptions: RW[] = ["RW 09", "RW 10", "RW 11"];
 const kependudukanOption: KependudukanOption[] = [
   "Profil Kependudukan",
   "Komposisi Masyarakat",
+  "Profil Lokasi Dukuh",
   "Peta Administrasi Dukuh",
   "Peta Administrasi",
 ];
 
 const tabs: Tab[] = ["Kependudukan", "Zona Rawan", "Kualitas Air", "UMKM"];
 
-type KependudukanMap =
-  | string
-  | Record<RW, string>;
+type KependudukanMap = string | Record<RW, string>;
 
 type MapImages = {
   Kependudukan: Record<KependudukanOption, KependudukanMap>;
@@ -49,7 +49,7 @@ const mapImages: MapImages = {
       "RW 10": "/images/datapenduduk/Komposisi RW 1.png",
       "RW 11": "/images/datapenduduk/Komposisi RW 11.png",
     },
-
+    "Profil Lokasi Dukuh": "/images/datapenduduk/Peta Lokasi Dukuh.png",
     "Peta Administrasi Dukuh": "/images/datapenduduk/peta dukuh.jpeg",
 
     "Peta Administrasi": {
@@ -88,8 +88,7 @@ export default function WilayahSection() {
   // Ambil image
   const getMapImage = (): string => {
     if (activeTab === "Kependudukan") {
-      const kependudukanData =
-        mapImages.Kependudukan[selectedKependudukan];
+      const kependudukanData = mapImages.Kependudukan[selectedKependudukan];
 
       if (typeof kependudukanData === "object") {
         return kependudukanData[selectedRW];
@@ -112,9 +111,7 @@ export default function WilayahSection() {
     }
   };
 
-  const handleKependudukanChange = (
-    value: KependudukanOption,
-  ): void => {
+  const handleKependudukanChange = (value: KependudukanOption): void => {
     setSelectedKependudukan(value);
     setSelectedRW("RW 09");
   };
@@ -126,9 +123,11 @@ export default function WilayahSection() {
   /* ================= RENDER ================= */
 
   return (
-    <section id="Wilayah" className="min-h-screen bg-gradient-to-b from-green-50 to-white py-8 md:py-16">
+    <section
+      id="Wilayah"
+      className="min-h-screen bg-gradient-to-b from-green-50 to-white py-8 md:py-16"
+    >
       <div className="max-w-7xl mx-auto px-4">
-
         {/* Title */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-8 text-gray-900">
           Wilayah Plono Timur
@@ -154,15 +153,12 @@ export default function WilayahSection() {
         {/* Filters */}
         {activeTab === "Kependudukan" && (
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8 max-w-3xl mx-auto">
-
             {/* Kependudukan */}
             <div className="relative flex-1">
               <select
                 value={selectedKependudukan}
                 onChange={(e) =>
-                  handleKependudukanChange(
-                    e.target.value as KependudukanOption,
-                  )
+                  handleKependudukanChange(e.target.value as KependudukanOption)
                 }
                 className="w-full appearance-none bg-white border-2 border-green-700 text-green-700 rounded-full px-4 md:px-6 py-2 md:py-3 pr-10 text-sm md:text-base font-medium focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer"
               >
@@ -181,9 +177,7 @@ export default function WilayahSection() {
               <div className="relative flex-1">
                 <select
                   value={selectedRW}
-                  onChange={(e) =>
-                    handleRWChange(e.target.value as RW)
-                  }
+                  onChange={(e) => handleRWChange(e.target.value as RW)}
                   className="w-full appearance-none bg-white border-2 border-green-700 text-green-700 rounded-full px-4 md:px-6 py-2 md:py-3 pr-10 text-sm md:text-base font-medium focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer"
                 >
                   {rwOptions.map((option) => (
@@ -202,7 +196,6 @@ export default function WilayahSection() {
         {/* Map */}
         <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-xl">
           <div className="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-lg">
-
             <div className="relative w-full overflow-x-auto overflow-y-hidden">
               <div className="min-w-[800px] md:min-w-full h-full">
                 <img
@@ -218,7 +211,6 @@ export default function WilayahSection() {
                 ← Geser untuk melihat selengkapnya →
               </p>
             </div>
-
           </div>
         </div>
       </div>
