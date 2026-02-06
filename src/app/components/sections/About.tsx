@@ -20,7 +20,7 @@ const products = [
 
 export default function AboutSection() {
   return (
-    <section className="w-full bg-green-50 py-16 lg:py-24 px-6 lg:px-20">
+    <section id="Profil" className="w-full bg-green-50 py-16 lg:py-24 px-6 lg:px-20">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-12 lg:mb-16">

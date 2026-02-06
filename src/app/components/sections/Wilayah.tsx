@@ -3,73 +3,132 @@
 import { useState } from "react";
 import { ChevronDown } from "lucide-react";
 
+/* ================= TYPES ================= */
+
+type RW = "RW 09" | "RW 10" | "RW 11";
+
+type KependudukanOption =
+  | "Profil Kependudukan"
+  | "Komposisi Masyarakat"
+  | "Peta Administrasi Dukuh"
+  | "Peta Administrasi";
+
+type Tab = "Kependudukan" | "Zona Rawan" | "Kualitas Air" | "UMKM";
+
 /* ================= DATA ================= */
 
-const dukuhOptions = [
-  "Plono Timur",
-  "Plono Barat",
-  "Plono Utara",
-  "Plono Selatan",
+const rwOptions: RW[] = ["RW 09", "RW 10", "RW 11"];
+
+const kependudukanOption: KependudukanOption[] = [
+  "Profil Kependudukan",
+  "Komposisi Masyarakat",
+  "Peta Administrasi Dukuh",
+  "Peta Administrasi",
 ];
 
-const rwOptions = [
-  "RW 01",
-  "RW 02",
-  "RW 03",
-  "RW 04",
-  "RW 05",
-  "RW 06",
-  "RW 07",
-  "RW 08",
-  "RW 09",
-  "RW 10",
-];
+const tabs: Tab[] = ["Kependudukan", "Zona Rawan", "Kualitas Air", "UMKM"];
 
-const rtOptions = [
-  "RT 01",
-  "RT 02",
-  "RT 03",
-  "RT 04",
-  "RT 05",
-  "RT 06",
-  "RT 07",
-  "RT 08",
-  "RT 09",
-  "RT 10",
-  "RT 11",
-  "RT 12",
-  "RT 13",
-  "RT 14",
-  "RT 15",
-  "RT 16",
-  "RT 17",
-  "RT 18",
-  "RT 19",
-  "RT 20",
-];
+type KependudukanMap =
+  | string
+  | Record<RW, string>;
 
-const tabs = ["Wilayah", "Zona Rawan", "Kualitas Air", "UMKM"];
+type MapImages = {
+  Kependudukan: Record<KependudukanOption, KependudukanMap>;
+  "Zona Rawan": string;
+  "Kualitas Air": string;
+  UMKM: string;
+};
 
-// Dummy map images
-const mapImages = {
-  Wilayah:
-    "https://images.unsplash.com/photo-1524661135-423995f22d0b?w=1200&h=800&fit=crop",
+// Map images untuk setiap kombinasi
+const mapImages: MapImages = {
+  Kependudukan: {
+    "Profil Kependudukan": "/images/datapenduduk/Profil Kependudukan.png",
+
+    "Komposisi Masyarakat": {
+      "RW 09": "/images/datapenduduk/Komposisi RW 9.png",
+      "RW 10": "/images/datapenduduk/Komposisi RW 1.png",
+      "RW 11": "/images/datapenduduk/Komposisi RW 11.png",
+    },
+
+    "Peta Administrasi Dukuh": "/images/datapenduduk/peta dukuh.jpeg",
+
+    "Peta Administrasi": {
+      "RW 09": "/images/datapenduduk/peta administari 9.jpeg",
+      "RW 10": "/images/datapenduduk/peta administrasi 10.jpeg",
+      "RW 11": "/images/datapenduduk/peta administrasi 11.jpeg",
+    },
+  },
+
   "Zona Rawan": "/images/datapenduduk/PETA POTENSI LONGSOR KKN.png",
   "Kualitas Air": "/images/datapenduduk/kualitas air.png",
-  UMKM: "https://images.unsplash.com/photo-1577495508048-b635879837f1?w=1200&h=800&fit=crop",
+  UMKM: "/images/datapenduduk/peta umkm.jpeg",
 };
 
 /* ================= COMPONENT ================= */
 
 export default function WilayahSection() {
-  const [activeTab, setActiveTab] = useState("Wilayah");
-  const [selectedDukuh, setSelectedDukuh] = useState("Plono Timur");
-  const [selectedRW, setSelectedRW] = useState("RW 09");
-  const [selectedRT, setSelectedRT] = useState("RT 17");
+  const [activeTab, setActiveTab] = useState<Tab>("Kependudukan");
+
+  const [selectedKependudukan, setSelectedKependudukan] =
+    useState<KependudukanOption>("Profil Kependudukan");
+
+  const [selectedRW, setSelectedRW] = useState<RW>("RW 09");
+
+  /* ================= HELPERS ================= */
+
+  // Apakah perlu filter RW
+  const needsRWFilter = (): boolean => {
+    return (
+      activeTab === "Kependudukan" &&
+      (selectedKependudukan === "Komposisi Masyarakat" ||
+        selectedKependudukan === "Peta Administrasi")
+    );
+  };
+
+  // Ambil image
+  const getMapImage = (): string => {
+    if (activeTab === "Kependudukan") {
+      const kependudukanData =
+        mapImages.Kependudukan[selectedKependudukan];
+
+      if (typeof kependudukanData === "object") {
+        return kependudukanData[selectedRW];
+      }
+
+      return kependudukanData;
+    }
+
+    return mapImages[activeTab];
+  };
+
+  /* ================= HANDLERS ================= */
+
+  const handleTabChange = (tab: Tab): void => {
+    setActiveTab(tab);
+
+    if (tab === "Kependudukan") {
+      setSelectedKependudukan("Profil Kependudukan");
+      setSelectedRW("RW 09");
+    }
+  };
+
+  const handleKependudukanChange = (
+    value: KependudukanOption,
+  ): void => {
+    setSelectedKependudukan(value);
+    setSelectedRW("RW 09");
+  };
+
+  const handleRWChange = (value: RW): void => {
+    setSelectedRW(value);
+  };
+
+  /* ================= RENDER ================= */
 
   return (
-    <section className="min-h-screen bg-gradient-to-b from-green-50 to-white py-8 md:py-16">
+    <section id="Wilayah" className="min-h-screen bg-gradient-to-b from-green-50 to-white py-8 md:py-16">
       <div className="max-w-7xl mx-auto px-4">
+
         {/* Title */}
         <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-center mb-6 md:mb-8 text-gray-900">
           Wilayah Plono Timur
@@ -80,7 +139,7 @@ export default function WilayahSection() {
           {tabs.map((tab) => (
             <button
               key={tab}
-              onClick={() => setActiveTab(tab)}
+              onClick={() => handleTabChange(tab)}
               className={`px-4 md:px-6 py-2 md:py-3 rounded-full text-sm md:text-base font-medium transition-all duration-300 ${
                 activeTab === tab
                   ? "bg-green-700 text-white shadow-lg scale-105"
@@ -92,91 +151,74 @@ export default function WilayahSection() {
           ))}
         </div>
 
-        {/* Filters - Only show on Wilayah tab */}
-        {activeTab === "Wilayah" && (
+        {/* Filters */}
+        {activeTab === "Kependudukan" && (
           <div className="flex flex-col sm:flex-row gap-3 md:gap-4 mb-6 md:mb-8 max-w-3xl mx-auto">
-            {/* Dukuh Dropdown */}
+
+            {/* Kependudukan */}
             <div className="relative flex-1">
               <select
-                value={selectedDukuh}
-                onChange={(e) => setSelectedDukuh(e.target.value)}
+                value={selectedKependudukan}
+                onChange={(e) =>
+                  handleKependudukanChange(
+                    e.target.value as KependudukanOption,
+                  )
+                }
                 className="w-full appearance-none bg-white border-2 border-green-700 text-green-700 rounded-full px-4 md:px-6 py-2 md:py-3 pr-10 text-sm md:text-base font-medium focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer"
               >
-                {dukuhOptions.map((option) => (
+                {kependudukanOption.map((option) => (
                   <option key={option} value={option}>
                     {option}
                   </option>
                 ))}
               </select>
+
               <ChevronDown className="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 w-4 md:w-5 h-4 md:h-5 text-green-700 pointer-events-none" />
             </div>
 
-            {/* RW Dropdown */}
-            <div className="relative flex-1">
-              <select
-                value={selectedRW}
-                onChange={(e) => setSelectedRW(e.target.value)}
-                className="w-full appearance-none bg-white border-2 border-green-700 text-green-700 rounded-full px-4 md:px-6 py-2 md:py-3 pr-10 text-sm md:text-base font-medium focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer"
-              >
-                {rwOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-              <ChevronDown className="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 w-4 md:w-5 h-4 md:h-5 text-green-700 pointer-events-none" />
-            </div>
+            {/* RW */}
+            {needsRWFilter() && (
+              <div className="relative flex-1">
+                <select
+                  value={selectedRW}
+                  onChange={(e) =>
+                    handleRWChange(e.target.value as RW)
+                  }
+                  className="w-full appearance-none bg-white border-2 border-green-700 text-green-700 rounded-full px-4 md:px-6 py-2 md:py-3 pr-10 text-sm md:text-base font-medium focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer"
+                >
+                  {rwOptions.map((option) => (
+                    <option key={option} value={option}>
+                      {option}
+                    </option>
+                  ))}
+                </select>
 
-            {/* RT Dropdown */}
-            <div className="relative flex-1">
-              <select
-                value={selectedRT}
-                onChange={(e) => setSelectedRT(e.target.value)}
-                className="w-full appearance-none bg-white border-2 border-green-700 text-green-700 rounded-full px-4 md:px-6 py-2 md:py-3 pr-10 text-sm md:text-base font-medium focus:outline-none focus:ring-2 focus:ring-green-500 cursor-pointer"
-              >
-                {rtOptions.map((option) => (
-                  <option key={option} value={option}>
-                    {option}
-                  </option>
-                ))}
-              </select>
-              <ChevronDown className="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 w-4 md:w-5 h-4 md:h-5 text-green-700 pointer-events-none" />
-            </div>
+                <ChevronDown className="absolute right-3 md:right-4 top-1/2 -translate-y-1/2 w-4 md:w-5 h-4 md:h-5 text-green-700 pointer-events-none" />
+              </div>
+            )}
           </div>
         )}
 
-        {/* Map Container */}
+        {/* Map */}
         <div className="bg-gradient-to-br from-green-100 to-green-50 rounded-2xl md:rounded-3xl p-4 md:p-6 shadow-xl">
           <div className="bg-white rounded-xl md:rounded-2xl overflow-hidden shadow-lg">
-            {/* Map Image - Scrollable on mobile */}
+
             <div className="relative w-full overflow-x-auto overflow-y-hidden">
               <div className="min-w-[800px] md:min-w-full h-full">
                 <img
-                  src={mapImages[activeTab]}
+                  src={getMapImage()}
                   alt={`Peta ${activeTab}`}
                   className="w-full h-full object-cover"
                 />
-
-                {/* Overlay info */}
-                <div className="absolute top-3 md:top-4 left-3 md:left-4 bg-white/90 backdrop-blur-sm rounded-lg px-3 md:px-4 py-1.5 md:py-2 shadow-lg">
-                  <p className="text-xs md:text-sm font-semibold text-gray-800">
-                    {activeTab}
-                  </p>
-                  {activeTab === "Wilayah" && (
-                    <p className="text-[10px] md:text-xs text-gray-600">
-                      {selectedDukuh} - {selectedRW} - {selectedRT}
-                    </p>
-                  )}
-                </div>
               </div>
             </div>
 
-            {/* Scroll indicator for mobile */}
             <div className="md:hidden text-center py-2 bg-gray-50">
               <p className="text-xs text-gray-500">
                 ← Geser untuk melihat selengkapnya →
               </p>
             </div>
+
           </div>
         </div>
       </div>

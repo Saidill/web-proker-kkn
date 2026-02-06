@@ -5,11 +5,11 @@ import Image from "next/image";
 
 const menus = [
   { label: "Beranda", href: "#Beranda" },
-  { label: "Profil", href: "#profil" },
+  { label: "Profil", href: "#Profil" },
   { label: "Kegiatan", href: "#Kegiatan" },
   { label: "Produk Lokal", href: "#ProdukLokal" },
-  { label: "Wilayah", href: "#wilayah" },
-  { label: "Kontak", href: "#kontak" },
+  { label: "Wilayah", href: "#Wilayah" },
+  { label: "Kontak", href: "#Kontak" },
 ];
 
 export default function Navbar() {

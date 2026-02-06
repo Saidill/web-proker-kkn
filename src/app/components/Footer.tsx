@@ -1,7 +1,8 @@
 "use client";
 
-import React from 'react';
-import { Phone } from 'lucide-react';
+import React from "react";
+import { Phone } from "lucide-react";
+import Image from "next/image";
 
 const Footer: React.FC = () => {
   return (
@@ -13,7 +14,14 @@ const Footer: React.FC = () => {
           <div className="flex items-center justify-between mb-8">
             {/* Brand */}
             <div className="flex items-center gap-5">
-              <div className="w-14 h-14 bg-white rounded-full"></div>
+              <Image
+                src="/images/logo_plono.png"
+                alt="Logo Plono Timur"
+                width={82}
+                height={82}
+                className="rounded-full object-cover bg-white"
+              />
+
               <div>
                 <h2 className="text-3xl font-bold">Plono Timur</h2>
                 <p className="text-base opacity-90">Lalalalalalalalalalalala</p>
@@ -22,27 +30,45 @@ const Footer: React.FC = () => {
 
             {/* Navigation */}
             <nav className="flex items-center gap-8">
-              <a href="#beranda" className="text-base font-medium hover:opacity-80 transition-opacity">
+              <a
+                href="#Beranda"
+                className="text-base font-medium hover:opacity-80 transition-opacity"
+              >
                 Beranda
               </a>
               <span className="text-white/40">|</span>
-              <a href="#profil" className="text-base font-medium hover:opacity-80 transition-opacity">
+              <a
+                href="#Profil"
+                className="text-base font-medium hover:opacity-80 transition-opacity"
+              >
                 Profil
               </a>
               <span className="text-white/40">|</span>
-              <a href="#kegiatan" className="text-base font-medium hover:opacity-80 transition-opacity">
+              <a
+                href="#Kegiatan"
+                className="text-base font-medium hover:opacity-80 transition-opacity"
+              >
                 Kegiatan
               </a>
               <span className="text-white/40">|</span>
-              <a href="#produk-lokal" className="text-base font-medium hover:opacity-80 transition-opacity">
+              <a
+                href="#ProdukLokal"
+                className="text-base font-medium hover:opacity-80 transition-opacity"
+              >
                 Produk Lokal
               </a>
               <span className="text-white/40">|</span>
-              <a href="#wilayah" className="text-base font-medium hover:opacity-80 transition-opacity">
+              <a
+                href="#Wilayah"
+                className="text-base font-medium hover:opacity-80 transition-opacity"
+              >
                 Wilayah
               </a>
               <span className="text-white/40">|</span>
-              <a href="#kontak" className="text-base font-medium hover:opacity-80 transition-opacity">
+              <a
+                href="#Kontak"
+                className="text-base font-medium hover:opacity-80 transition-opacity"
+              >
                 Kontak
               </a>
             </nav>
@@ -67,23 +93,40 @@ const Footer: React.FC = () => {
       <footer className="md:hidden bg-gradient-to-br from-[#2d7a5e] to-[#3d9b73] text-white px-8 py-16 text-center">
         {/* Brand */}
         <h2 className="text-5xl font-bold mb-4">Plono Timur</h2>
-        <p className="text-2xl mb-10 text-[#1a5940]">Lalalalalalalalalalalala</p>
+        <p className="text-2xl mb-10 text-[#1a5940]">
+          Lalalalalalalalalalalala
+        </p>
 
         {/* Navigation */}
         <nav className="flex flex-wrap justify-center gap-x-4 gap-y-5 mb-12">
-          <a href="#beranda" className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70">
+          <a
+            href="#beranda"
+            className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
+          >
             Beranda
           </a>
-          <a href="#profil" className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70">
+          <a
+            href="#profil"
+            className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
+          >
             Profil
           </a>
-          <a href="#kegiatan" className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70">
+          <a
+            href="#kegiatan"
+            className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
+          >
             Kegiatan
           </a>
-          <a href="#produk-lokal" className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70">
+          <a
+            href="#produk-lokal"
+            className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
+          >
             Produk Lokal
           </a>
-          <a href="#wilayah" className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70">
+          <a
+            href="#wilayah"
+            className="text-lg font-medium relative after:content-['•'] after:absolute after:-right-2.5 after:opacity-70"
+          >
             Wilayah
           </a>
           <a href="#kontak" className="text-lg font-medium">
