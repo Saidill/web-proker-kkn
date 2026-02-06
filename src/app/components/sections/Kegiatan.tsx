@@ -23,208 +23,118 @@ type Direction = -1 | 0 | 1;
 const kegiatanData: Kegiatan[] = [
    {
     id: 1,
-    title: "Kerja Bakti Lingkungan RW 10",
+    title: "Mengajar di SD PRENNTHALER KALIREJO",
     date: "DD/MM/YYYY",
     shortDesc:
-      "Kegiatan gotong royong warga RW 10 untuk menjaga kebersihan dan kenyamanan lingkungan RW.",
+      "Program kerja Mengajar di SD Prennthaler Kalirejo untuk mendukung proses pembelajaran siswa.",
     fullDesc:
-      "Kerja Bakti RW 10 merupakan kegiatan rutin yang melibatkan warga dalam membersihkan lingkungan sekitar, seperti jalan, saluran air, dan fasilitas umum. Kegiatan ini bertujuan untuk menciptakan lingkungan yang bersih, sehat, dan nyaman, sekaligus mempererat kebersamaan serta semangat gotong royong antarwarga Plono Timur.",
+      "Program kerja Mengajar di SD Prennthaler Kalirejo bertujuan untuk mendukung proses pembelajaran siswa melalui kegiatan edukatif dan interaktif. Kegiatan meliputi pengajaran matematika dan sains, edukasi pentingnya konsumsi susu untuk kesehatan, pengenalan lagu daerah sebagai upaya pelestarian budaya, algoritma coding sederhana untuk melatih pola pikir logis, serta etika dan literasi digital guna membekali siswa dalam menggunakan teknologi secara bijak.",
     image:
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=600&fit=crop",
+      "/images/kegiatan/mengajar/IMG_20260114_104808.jpeg",
     gallery: [
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "/images/kegiatan/mengajar/IMG_20260114_104808.jpeg",
+      "/images/kegiatan/mengajar/IMG_20260114_104824.jpeg",
+      "/images/kegiatan/mengajar/IMG_20260114_105335.jpeg",
     ],
   },
   {
     id: 2,
-    title: "Senam Bersama Gerakan Masyarakat Sehat",
+    title: "Program Edukasi dan Pembuatan Mineral Block sebagai Suplemen Mineral bagi Ternak",
     date: "DD/MM/YYYY",
     shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+      "Penyampaian materi tentang fungsi mineral, demonstrasi pembuatan mineral block, serta praktik bersama peternak.",
     fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Kegiatan dilakukan melalui penyampaian materi tentang fungsi mineral, demonstrasi pembuatan mineral block, serta praktik bersama peternak. Program ini membantu peternak memahami manfaat dan cara penggunaan mineral block, terciptanya mineral block siap pakai  dengan penerapan sederhana di lapangan.",
     image:
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&h=600&fit=crop",
+      "/images/kegiatan/mineral_block/IMG_20260121_170329.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "/images/kegiatan/mineral_block/IMG_20260121_170329.jpg",
+      "/images/kegiatan/mineral_block/IMG_20260121_170633.jpg",
+      "/images/kegiatan/mineral_block/IMG_20260121_171244.jpg",
     ],
   },
   {
     id: 3,
-    title: "Diskusi Warga Plono Timur Bersama KKN PPM UGM",
+    title: "Penyusunan Profil Dukuh Plono Timur Berdasarkan Aspek Kewilayahan, Demografi, Sosial dan Ekonomi Sebagai Alat Pendataan dan Pengoptimalan Potensi Eksisting Terutama di Bidang Pertanian, Perkebunan, dan Peternakan",
     date: "DD/MM/YYYY",
     shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+      "Menyusun dokumen komprehensif profil Dukuh Plono Timur yang memuat terkait data dan analisis mengenai karakteristik wilayah, kondisi demografi, dan kondisi sosial.",
     fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Kegiatan atau program ini dibuat dengan tujuan untuk menyusun dokumen komprehensif profil Dukuh Plono Timur yang memuat terkait data dan analisis mengenai karakteristik wilayah, kondisi demografi, dan kondisi sosial. Profil ini menjadi baseline data untuk perencanaan program dan pembangunan dukuh di bidang demografi, dan kondisi sosial masyarakat Plono Timur untuk mendukung kegiatan pertanian, perkebunan, dan peternakan.",
     image:
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=800&h=600&fit=crop",
+      "/images/kegiatan/survei_rafa/IMG_20260103_133423.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
+      "/images/kegiatan/survei_rafa/IMG_20260103_133423.jpg",
+      "/images/kegiatan/survei_rafa/IMG_20260103_135827.jpg",
+      "/images/kegiatan/survei_rafa/IMG_20260104_132522.jpg",
+      "/images/kegiatan/survei_rafa/IMG_20260104_144727.jpg",
     ],
   },
   {
     id: 4,
-    title: "Tanam Jahe Bersama Warga",
+    title: "Ruang Bercerita dan Tumbuh Bersama Anak Dukuh Plono Timur",
     date: "DD/MM/YYYY",
     shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+      "Kegiatan edukatif yang dirancang sebagai wadah pembelajaran nonformal bagi anak-anak Dukuh Plono Timur.",
     fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Ruang Bercerita merupakan kegiatan edukatif yang dirancang sebagai wadah pembelajaran nonformal bagi anak-anak Dukuh Plono Timur. Tujuan kegiatan ini adalah meningkatkan minat baca, kemampuan komunikasi, serta kepercayaan diri anak. Pelaksanaan dilakukan melalui aktivitas membaca bersama, bercerita, bermain edukatif, dan diskusi ringan dengan pendekatan partisipatif. Hasil kegiatan menunjukkan anak-anak lebih aktif, antusias mengikuti kegiatan, serta mulai berani menyampaikan pendapat dan cerita secara lisan.",
     image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+      "/images/kegiatan/tbm/WhatsApp Image 2026-02-06 at 12.25.50.jpeg",
     gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+      "/images/kegiatan/tbm/WhatsApp Image 2026-02-06 at 12.25.50.jpeg",
+      "/images/kegiatan/tbm/IMG_20260117_153455.jpg",
+      "/images/kegiatan/tbm/IMG_20260117_155953.jpg",
+      "/images/kegiatan/tbm/IMG_20260117_160148.jpg",
     ],
   },
   {
     id: 5,
-    title: "HUT Ke-79 Kalurahan Pagerharjo",
+    title: "Pemetaan Kualitas Air dan Zonasi Rawan Longsor sebagai Upaya Mendukung Ketahanan Lingkungan di Kecamatan Samigaluh",
     date: "DD/MM/YYYY",
     shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+      "Mengidentifikasi kondisi lingkungan di Kecamatan Samigaluh melalui pemetaan kualitas air permukaan sebagai sumber air bersih serta pemetaan zonasi rawan longsor.",
     fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Program ini bertujuan untuk mengidentifikasi kondisi lingkungan di Kecamatan Samigaluh melalui pemetaan kualitas air permukaan sebagai sumber air bersih serta pemetaan zonasi rawan longsor. Kegiatan ini dilakukan sebagai upaya mendukung keberlanjutan sektor pertanian, perkebunan, peternakan, dan keselamatan permukiman masyarakat. Hasil pemetaan diharapkan dapat menjadi sumber informasi yang mudah dipahami, sehingga masyarakat dapat lebih bijak dalam memanfaatkan sumber daya air serta meningkatkan kewaspadaan dan kesiapsiagaan terhadap potensi bencana longsor di wilayahnya.",
     image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+      "/images/kegiatan/pemetaan/20260106_155317.jpg",
     gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+      "/images/kegiatan/pemetaan/20260106_155317.jpg",
+      "/images/kegiatan/pemetaan/IMG-20260106-WA0092.jpg",
+      "/images/kegiatan/pemetaan/IMG-20260106-WA0131.jpg",
+      "/images/kegiatan/pemetaan/IMG-20260206-WA0060.jpg",
     ],
   },
   {
     id: 6,
-    title: "HUT Ke-79 Kalurahan Pagerharjo",
+    title: "Sosialisasi Pembuatan Minuman Herbal (Wedang Uwuh) di Dukuh Plono Timur",
     date: "DD/MM/YYYY",
     shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+      "Pembuatan minuman herbal wedang uwuh guna meningkatkan pengetahuan dan keterampilan masyarakat dalam mengolah bahan herbal lokal menjadi minuman yang bernilai ekonomi.",
     fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Kegiatan praktik pembuatan minuman herbal wedang uwuh bertujuan meningkatkan pengetahuan dan keterampilan masyarakat dalam mengolah bahan herbal lokal menjadi minuman yang bernilai ekonomi. Kegiatan ini dilakukan dengan mengenalkan jenis, manfaat, serta potensi ekonomi.",
     image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+      "/images/kegiatan/wedang_uwuh/IMG_20260114_151921.jpeg",
     gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+      "/images/kegiatan/wedang_uwuh/IMG_20260114_151921.jpeg",
+      "/images/kegiatan/wedang_uwuh/IMG_20260114_151921(1).jpeg",
     ],
   },
   {
     id: 7,
-    title: "Posyandu Balita",
+    title: "Praktik pembuatan popcorn jagung",
     date: "DD/MM/YYYY",
     shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
+      "Mengenalkan potensi pengolahan popcorn dari jagung kemudian dilanjutkan dengan praktik bersama ibu ibu.",
     fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Kegiatan praktik pembuatan popcorn jagung dari jagung dilakukan dengan mengenalkan potensi pengolahan popcorn dari jagung kemudian dilanjutkan dengan praktik bersama ibu ibu. Program ini bertujuan untuk memberikan pengetahuan dan keterampilan kepada masyarakat dalam mengolah hasil pertanian menjadi produk bernilai tambah.",
     image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
+      "/images/kegiatan/popcorn/IMG_20260113_153300.jpeg",
     gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
+      "/images/kegiatan/popcorn/IMG_20260113_153300.jpeg",
+      "/images/kegiatan/popcorn/IMG_20260114_151814.jpeg",
+      "/images/kegiatan/popcorn/IMG_20260114_151822.jpeg",
     ],
-  },
-    {
-    id: 8,
-    title: "Dasa Wisma",
-    date: "DD/MM/YYYY",
-    shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
-    fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
-    ],
-  },
-  {
-    id: 9,
-    title: "Kegiatan PKK RW 9",
-    date: "DD/MM/YYYY",
-    shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
-    fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
-    ],
-  },
-  {
-    id: 10,
-    title: "Perkumpulan RW 10",
-    date: "DD/MM/YYYY",
-    shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
-    fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://drive.google.com/file/d/1goQUEr06VhNhaTH1ZCfHOfDXVxZRs-Fq/view?usp=drive_link",
-    gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
-    ],
-  },
-  {
-    id: 11,
-    title: "Kegiatan PKK RW 11",
-    date: "DD/MM/YYYY",
-    shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
-    fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
-    ],
-  },
-  {
-    id: 10,
-    title: "Kegiatan Taman Bacaan Masyarakat",
-    date: "04/01/2026",
-    shortDesc:
-      "Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada di Plono Timur. Deskripsi kegiatan masyarakat yang ada......",
-    fullDesc:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    image:
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=800&h=600&fit=crop",
-    gallery: [
-      "https://images.unsplash.com/photo-1416169607655-0c2b3ce2e1cc?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&h=300&fit=crop",
-      "https://images.unsplash.com/photo-1464207687429-7505649dae38?w=400&h=300&fit=crop",
-    ],
-  },
+  }
 ];
 
 
