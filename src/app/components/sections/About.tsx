@@ -3,18 +3,18 @@
 const products = [
   {
     id: 1,
-    name: "Susu Kambing",
-    image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=300&fit=crop"
+    name: "Keripik Talas",
+    image: "/images/product/IMG_9611 - saidil.jpeg"
   },
   {
     id: 2,
-    name: "Susu Kambing",
-    image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=300&fit=crop"
+    name: "Geblek Pawon",
+    image: "/images/product/IMG_9613 - saidil.jpeg"
   },
   {
     id: 3,
-    name: "Susu Kambing",
-    image: "https://images.unsplash.com/photo-1563636619-e9143da7973b?w=400&h=300&fit=crop"
+    name: "Peyek Kacang dan Pegagang",
+    image: "/images/product/IMG_9629 - saidil.jpeg"
   }
 ];
 
